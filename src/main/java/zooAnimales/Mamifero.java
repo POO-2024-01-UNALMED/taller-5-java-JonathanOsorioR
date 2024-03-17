@@ -1,6 +1,6 @@
 package zooAnimales;
 import java.util.ArrayList;
-import gestion.Zona;
+
 
 public class Mamifero extends Animal {
 	
