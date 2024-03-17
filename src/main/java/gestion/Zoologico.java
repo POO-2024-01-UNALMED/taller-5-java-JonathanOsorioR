@@ -26,7 +26,7 @@ public class Zoologico {
 		return total;
 	}
 	
-	public void agregarZona(Zona nuevaZona) {
+	public void agregarZonas(Zona nuevaZona) {
 		zonas.add(nuevaZona);
 		nuevaZona.setZoo(this);
 	}
