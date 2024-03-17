@@ -9,14 +9,17 @@ public class Zona {
 	
 	public Zona () {
 		this(null,null);
-		Zoologico.agregarZona(this);
+		
 		
 	}
 	
 	public Zona (String nombre, Zoologico zoo) {
-		Zoologico.agregarZona(this);
+		
 		this.nombre = nombre;
 		this.zoo = zoo;
+		if(zoo != null) {
+			zoo.agregarZona(this);
+		}
 		
 	}
 	
