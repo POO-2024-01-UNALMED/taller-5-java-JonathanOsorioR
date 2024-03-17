@@ -31,11 +31,11 @@ public class Animal {
 	}
 	
 	public static String totalPorTipo() {
-		return "Mamiferos: " + Mamifero.cantidadMamiferos()+
-			   "\nAves: " + Ave.cantidadAves()+
-			   "\nReptiles " + Reptil.cantidadReptiles()+
-			   "\nPeces: " + Pez.cantidadPeces() +
-			   "\nAnfibios: " + Anfibio.cantidadAnfibios();
+		return "Mamiferos: " + Mamifero.getListado().size()+
+				"\nAves: " + Ave.getListado().size()+
+				"\nReptiles: " + Reptil.getListado().size()+
+				"\nPeces: " + Pez.getListado().size()+
+				"\nAnfibios: " + Anfibio.getListado().size();
 	}
 	
 	public String movimiento () {
