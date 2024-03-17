@@ -44,13 +44,10 @@ public class Animal {
 	}
 	
 	public String toString () {
-		String mensaje;
+		String mensaje = "";
 		if (zona.getNombre()!=null && zona.getZoo().getNombre()!=null) {
 			mensaje = ", la zona en la que me ubico es " + zona.getNombre() +", en el " + zona.getZoo().getNombre();
-		}
 		
-		else {
-			mensaje = "";
 		}
 		
 		return "Mi nombre es " + this.nombre + ",tengo una edad de " + this.edad + 
