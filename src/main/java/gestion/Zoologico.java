@@ -26,6 +26,10 @@ public class Zoologico {
 		return total;
 	}
 	
+	public ArrayList<Zona> getZona() {
+		return zonas;
+	}
+	
 	public void agregarZonas(Zona nuevaZona) {
 		zonas.add(nuevaZona);
 		nuevaZona.setZoo(this);
