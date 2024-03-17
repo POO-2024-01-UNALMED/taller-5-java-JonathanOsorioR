@@ -21,6 +21,10 @@ public class Zona {
 		
 	}
 	
+	public int getLengthAnimales() {
+		return animales.size();
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
