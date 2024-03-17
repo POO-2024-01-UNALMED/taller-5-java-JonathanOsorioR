@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class Anfibio extends Animal {
 	
 	private ArrayList<Anfibio> listado = new ArrayList<>();
-	public int ranas;
-	public int salamandras;
+	public int ranas = 0;
+	public int salamandras = 0;
 	private String colorPiel;
 	private boolean venenoso;
 	public static int totalAnfibio = 0;
@@ -28,7 +28,13 @@ public class Anfibio extends Animal {
 	
 		listado.add(this);
 	}
-	public static int getTotalAnfibio ( ) {
+	
+	public Anfibio crearRana (String nombre, int edad, String genero) {
+		ranas++;
+		return new Anfibio (nombre, edad, "selva", genero, "rojo", true);
+	}
+	
+	public static int cantidadAnfibio ( ) {
 		return totalAnfibio;
 	}
 	
@@ -37,5 +43,51 @@ public class Anfibio extends Animal {
 		super.movimiento();
 		return "saltar";
 	}
+
+	public ArrayList<Anfibio> getListado() {
+		return listado;
+	}
+
+	public void setListado(ArrayList<Anfibio> listado) {
+		this.listado = listado;
+	}
+
+	public int getRanas() {
+		return ranas;
+	}
+
+	public void setRanas(int ranas) {
+		this.ranas = ranas;
+	}
+
+	public int getSalamandras() {
+		return salamandras;
+	}
+
+	public void setSalamandras(int salamandras) {
+		this.salamandras = salamandras;
+	}
+
+	public String getColorPiel() {
+		return colorPiel;
+	}
+
+	public void setColorPiel(String colorPiel) {
+		this.colorPiel = colorPiel;
+	}
+
+	public boolean isVenenoso() {
+		return venenoso;
+	}
+
+	public void setVenenoso(boolean venenoso) {
+		this.venenoso = venenoso;
+	}
+
+	public static void setTotalAnfibio(int totalAnfibio) {
+		Anfibio.totalAnfibio = totalAnfibio;
+	}
+	
+	
 
 }
