@@ -1,5 +1,5 @@
 package zooAnimales;
-import java.util.ArrayList;
+
 import gestion.Zona;
 import gestion.Zoologico;
 
@@ -16,7 +16,7 @@ public class Animal {
 		
 	}
 
-	public Animal(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		totalAnimales++;
 		this.nombre = nombre;
 		this.edad = edad;
@@ -31,15 +31,15 @@ public class Animal {
 	}
 	
 	public String totalPorTipo() {
-		return "Mamiferos: " + Mamifero.getTotalMamiferos()+
-			   "\nAves: " + Ave.getTotalAve()+
-			   "\nReptiles " + Reptil.getTotalReptiles()+
-			   "\nPeces: " + Pez.getTotalPeces() +
-			   "\nAnfibios: " + Anfibio.getTotalAnfibio();
+		return "Mamiferos: " + Mamifero.cantidadMamiferos()+
+			   "\nAves: " + Ave.cantidadAves()+
+			   "\nReptiles " + Reptil.cantidadReptiles()+
+			   "\nPeces: " + Pez.cantidadPeces() +
+			   "\nAnfibios: " + Anfibio.cantidadAnfibios();
 	}
 	
 	public String movimiento () {
-		return "desplazarse";
+		return "desplazarse"; 
 
 	}
 	

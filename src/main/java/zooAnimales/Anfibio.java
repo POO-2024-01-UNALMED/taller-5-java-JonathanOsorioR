@@ -13,20 +13,20 @@ public class Anfibio extends Animal {
 	public static int totalAnfibio = 0;
 
 	public Anfibio () {
-		
+		totalAnfibio++;
+		listado.add(this);
 	}
 	
 	public Anfibio (String nombre,
 			int edad, String habitat, String genero, 
-			/*ArrayList<Zona> zona, int ranas,
-			int salamandras,*/ String colorPiel, boolean 
+			String colorPiel, boolean 
 			venenoso) {
-		super(nombre, edad, habitat, genero, zona);
-		//this.listado = listado; this.ranas = ranas; this.salamandras = salamandras;
+		super(nombre, edad, habitat, genero);
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
 		totalAnfibio++;
-		
+	
+		listado.add(this);
 	}
 	public static int getTotalAnfibio ( ) {
 		return totalAnfibio;
