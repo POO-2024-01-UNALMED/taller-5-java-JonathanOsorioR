@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Ave extends Animal{
 	
-	private ArrayList<Ave> listado = new ArrayList <> ();
+	private static ArrayList<Ave> listado = new ArrayList <> ();
 	public static int halcones = 0;
 	public static int aguilas = 0;
 	private String colorPlumas;
@@ -32,22 +32,22 @@ public class Ave extends Animal{
 			return "volar";
 		}
 	 
-	 public Ave crearHalcon(String nombre, int edad, String genero) {
+	 public static Ave crearHalcon(String nombre, int edad, String genero) {
 		 halcones++;
 		 return new Ave(nombre, edad,"montanas", genero, "cafe glorioso");
 	 }
 	 
-	 public Ave crearAguila(String nombre, int edad, String genero) {
+	 public static Ave crearAguila(String nombre, int edad, String genero) {
 		 aguilas++;
 		 return new Ave(nombre, edad,"montanas", genero, "blanco y amarillo");
      }
 
-	public ArrayList<Ave> getListado() {
+	public static ArrayList<Ave> getListado() {
 		return listado;
 	}
 
 	public void setListado(ArrayList<Ave> listado) {
-		this.listado = listado;
+		Ave.listado = listado;
 	}
 
 	public static int getHalcones() {

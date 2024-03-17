@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public class Pez extends Animal {
 	
-	private ArrayList<Pez> listado = new ArrayList<>();
-	public int salmones = 0;
-	public int bacalaos = 0;
+	private static ArrayList<Pez> listado = new ArrayList<>();
+	public static int salmones = 0;
+	public static int bacalaos = 0;
 	private String colorEscamas;
 	private int cantidadAletas;
 	public static int totalPeces = 0;
@@ -26,12 +26,12 @@ public class Pez extends Animal {
 		listado.add(this);
 	}
 	
-	public Pez crearSalmon(String nombre, int edad, String genero) {
+	public static Pez crearSalmon(String nombre, int edad, String genero) {
 		salmones++;
 		return new Pez (nombre, edad, "oceano", genero, "rojo", 6);
 	}
 	
-	public Pez crearBacalao (String nombre, int edad, String genero) {
+	public static Pez crearBacalao (String nombre, int edad, String genero) {
 		bacalaos++;
 		return new Pez (nombre, edad, "oceano", genero, "gris", 6);
 	}
@@ -46,12 +46,12 @@ public class Pez extends Animal {
 		return "nadar";
 	}
 
-	public ArrayList<Pez> getListado() {
+	public static ArrayList<Pez> getListado() {
 		return listado;
 	}
 
-	public void setListado(ArrayList<Pez> listado) {
-		this.listado = listado;
+	public static void setListado(ArrayList<Pez> listado) {
+		Pez.listado = listado;
 	}
 
 	public int getSalmones() {
@@ -59,15 +59,15 @@ public class Pez extends Animal {
 	}
 
 	public void setSalmones(int salmones) {
-		this.salmones = salmones;
+		Pez.salmones = salmones;
 	}
 
-	public int getBacalaos() {
+	public static int getBacalaos() {
 		return bacalaos;
 	}
 
-	public void setBacalaos(int bacalaos) {
-		this.bacalaos = bacalaos;
+	public static void setBacalaos(int bacalaos) {
+		Pez.bacalaos = bacalaos;
 	}
 
 	public String getColorEscamas() {

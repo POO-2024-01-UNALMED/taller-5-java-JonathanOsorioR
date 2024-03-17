@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Mamifero extends Animal {
 	
-	private ArrayList<Mamifero> listado = new ArrayList<>();
+	private static ArrayList<Mamifero> listado = new ArrayList<>();
 	public static int caballos = 0;
 	public static int leones = 0;
 	private boolean pelaje;
@@ -41,7 +41,7 @@ public class Mamifero extends Animal {
 		return new Mamifero(nombre, edad, "selva", genero, true, 4);
 	}
 
-	public ArrayList<Mamifero> getListado() {
+	public static ArrayList<Mamifero> getListado() {
 		return listado;
 	}
 
