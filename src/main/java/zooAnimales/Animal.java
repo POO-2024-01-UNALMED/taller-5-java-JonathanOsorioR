@@ -43,15 +43,15 @@ public class Animal {
 
 	}
 	
-	public String toString () {
-		String mensaje = "";
-		if (zona != null && zona.getZoo() != null && zona.getNombre()!=null && zona.getZoo().getNombre()!=null) {
-			mensaje = ", la zona en la que me ubico es " + zona.getNombre() +", en el " + zona.getZoo().getNombre();
-		
-		}
-		
-		return "Mi nombre es " + this.nombre + ",tengo una edad de " + this.edad + 
-				", habito en " + this.habitat + " y mi genero es "+ this.genero + mensaje;
+	public String toString() {
+	    String mensaje = "";
+	    
+	    if (zona != null && zona.getZoo() != null && zona.getNombre() != null && zona.getZoo().getNombre() != null) {
+	        mensaje = ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo().getNombre();
+	    }
+	    
+	    return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + 
+	           ", habito en " + this.habitat + " y mi genero es " + this.genero + mensaje;
 	}
 
 	public String getNombre() {
