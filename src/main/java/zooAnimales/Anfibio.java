@@ -42,9 +42,9 @@ public class Anfibio extends Animal {
 		return totalAnfibio;
 	}
 	
-	@Override
+	
 	public String movimiento() {
-		super.movimiento();
+		
 		return "saltar";
 	}
 

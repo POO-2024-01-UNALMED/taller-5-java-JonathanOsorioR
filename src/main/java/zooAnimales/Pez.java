@@ -40,9 +40,9 @@ public class Pez extends Animal {
 		return totalPeces;
 	}
 	
-	@Override
+	
 	public String movimiento() {
-		super.movimiento();
+		
 		return "nadar";
 	}
 

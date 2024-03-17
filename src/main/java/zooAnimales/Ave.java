@@ -26,9 +26,9 @@ public class Ave extends Animal{
 		 return totalAve;
 	 }
 
-	 @Override
-		public String movimiento() {
-			super.movimiento();
+	
+	 public String movimiento() {
+			
 			return "volar";
 		}
 	 
