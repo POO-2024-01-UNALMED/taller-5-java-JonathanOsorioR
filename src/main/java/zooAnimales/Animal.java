@@ -45,7 +45,7 @@ public class Animal {
 	
 	public String toString () {
 		String mensaje = "";
-		if (zona.getNombre()!=null && zona.getZoo().getNombre()!=null) {
+		if (zona != null && zona.getZoo() != null && zona.getNombre()!=null && zona.getZoo().getNombre()!=null) {
 			mensaje = ", la zona en la que me ubico es " + zona.getNombre() +", en el " + zona.getZoo().getNombre();
 		
 		}
