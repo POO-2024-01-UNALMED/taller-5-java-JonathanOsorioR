@@ -30,6 +30,11 @@ public class Zoologico {
 		zonas.add(nuevaZona);
 		nuevaZona.setZoo(this);
 	}
+	
+	public void agregarZona(Zona nuevaZona) {
+		zonas.add(nuevaZona);
+		nuevaZona.setZoo(this);
+	}
 
 	public String getNombre() {
 		return nombre;
